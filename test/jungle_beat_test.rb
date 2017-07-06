@@ -1,7 +1,7 @@
 require "./lib/jungle_beat"
 require "./lib/linked_list"
 
-gem 'minitest', '~> 5.2'
+# gem 'minitest', '~> 5.2'
 require 'minitest/autorun'
 require 'minitest/pride'
 

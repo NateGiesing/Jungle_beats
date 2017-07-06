@@ -34,6 +34,7 @@ class LinkedList
     current_node = current_node.next_node
     counter += 1
   end
+
   new_node = Node.new(data)
   remaining_nodes = current_node.next_node
   current_node.next_node = new_node
@@ -73,6 +74,7 @@ class LinkedList
       current_node = current_node.next_node
       counter += 1
     end
+
     return_amount.times do
       sounds << current_node.data + " "
       counter += 1

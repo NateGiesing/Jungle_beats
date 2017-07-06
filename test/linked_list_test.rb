@@ -46,7 +46,6 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_list_can_count
-    # skip
     list = LinkedList.new
     list.append("doop")
     list.append("deep")
@@ -57,7 +56,6 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_list_can_turn_into_a_string
-    # skip
     list = LinkedList.new
     list.append("doop")
     list.append("deep")
@@ -68,7 +66,6 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_prepending_will_output_data
-    # skip
     list = LinkedList.new
 
     assert_equal "dop", list.prepend("dop")
@@ -83,7 +80,6 @@ class LinkedListTest < Minitest::Test
     expected = "dop plop suu"
     actual   = list.to_string
 
-
     assert_equal expected, actual
   end
 
@@ -94,7 +90,6 @@ class LinkedListTest < Minitest::Test
     list.prepend("dop")
     expected = "dop"
     actual   = list.head.data
-
 
     assert_equal expected, actual
   end
@@ -117,7 +112,7 @@ class LinkedListTest < Minitest::Test
     list.prepend("dop")
     expected = 3
     actual   = list.count
-    # require "pry"; binding.pry
+
     assert_equal expected, actual
   end
 
@@ -169,6 +164,7 @@ class LinkedListTest < Minitest::Test
   list.append("shi")
   list.append("shu")
   list.append("blop")
+
   assert_equal true, list.includes?("deep")
  end
 
@@ -179,6 +175,7 @@ class LinkedListTest < Minitest::Test
     list.append("shi")
     list.append("shu")
     list.append("blop")
+
     assert_equal false, list.includes?("dep")
   end
 
@@ -194,7 +191,4 @@ class LinkedListTest < Minitest::Test
     assert_equal "shu", list.pop
     assert_equal "deep woo shi" , list.to_string
   end
-
-
-
 end

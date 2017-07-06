@@ -12,7 +12,6 @@ class JungleBeat
     sound = words.split
     sound.each do |word|
     list.append(word)
-# require "pry"; binding.pry
     end
   end
 
